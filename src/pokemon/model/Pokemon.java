@@ -17,7 +17,17 @@ public abstract class Pokemon
 	
 	public final String[] getPokemonTypes()
 	{
+		Class<?> [] types = getClass().getInterfaces();
+		String [] pokeTypes = new String[types.length];
 		
+		for(int index = 0; index < types.length; index++)
+		{
+			String currentInterface = types[index].getCanonicalName();
+			currentInterface = currentInterface.replaceAll(this.getClass().getPackage().getName() + ".", "");
+			pokeTypes[index] = currentInterface;
+		}
+		
+		return pokeTypes;
 	}
 	
 	public String toString()
@@ -31,7 +41,7 @@ public abstract class Pokemon
 	{
 		String pokemonInfo = "This pokemon is of type: " + this.getClass().getSimpleName();
 		
-		returnpokemonInfo;
+		return pokemonInfo;
 	}
 	
 	/**
@@ -120,32 +130,5 @@ public abstract class Pokemon
 	public void setCanEvolve(boolean canEvolve)
 	{
 		this.canEvolve = canEvolve;
-	}
-
-	public final String[] getPokemonTypes()
-	{
-		Class<?> [] types = getClass().getInterfaces();
-		String [] pokeTypes = new String[types.length];
-		
-		for(int index = 0; index < types.length; index++)
-		{
-			String currentInterface = types[index].getCanonicalName();
-			currentInterface = currentInterface.replace(this.getClass().getPackage().getName() + ".", "");
-			pokeTypes[index] = currentInterface;
-		}
-		
-		return pokeTypes;
-	}
-	
-	public String toString()
-	{
-		
-	}
-	
-	public String getPokemonInformation()
-	{
-		String pokemonInfo = "This Pokemon is of type: " + this.getClass().getSimpleName();
-		
-		return pokemonInfo;
 	}
 }
