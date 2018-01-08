@@ -46,4 +46,21 @@ public class PokemonController
 	{
 		return false;
 	}
+	
+	public String [] convertPokedex()
+	{
+		String [] names = new String [pokedex.size()];
+		
+		for (int index = 0; index < pokedex.size(); index++)
+		{
+			names[index] = pokedex.get(index).getName();
+		}
+		
+		return names;
+	}
+	
+	public void updateSelected(int selection, int health, int attack, boolean evolve, double modify, String name)
+	{
+		
+	}
 }
