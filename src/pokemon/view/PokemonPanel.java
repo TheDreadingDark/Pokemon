@@ -111,7 +111,7 @@ public class PokemonPanel extends JPanel
 	{
 		String[] types = appController.getPokedex().get(pokedexDropdown.getSelectedIndex()).getPokemonTypes();
 		
-		//Change this to mah your 3 minimum Types in your pokedex
+		//Change this to match your 3 minimum Types in your pokedex
 		if(types[0].equals("Grass"))
 		{
 			firstType.setBackground(Color.GREEN);
