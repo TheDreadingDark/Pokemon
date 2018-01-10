@@ -9,8 +9,6 @@ import pokemon.controller.PokemonController;
 
 public class PokemonPanel extends JPanel
 {
-	public PokemonPanel() {
-	}
 	private PokemonController appController;
 	private SpringLayout appLayout;
 	
@@ -61,25 +59,59 @@ public class PokemonPanel extends JPanel
 				
 		evolvableBox = new JCheckBox();
 		nameField = new JTextField("name");
+		appLayout.putConstraint(SpringLayout.NORTH, evolvableBox, 6, SpringLayout.SOUTH, nameField);
+		appLayout.putConstraint(SpringLayout.EAST, evolvableBox, 0, SpringLayout.EAST, nameField);
+		appLayout.putConstraint(SpringLayout.NORTH, nameField, 10, SpringLayout.NORTH, this);
+		appLayout.putConstraint(SpringLayout.EAST, nameField, -10, SpringLayout.EAST, this);
 		numberField = new JTextField("##");
+		appLayout.putConstraint(SpringLayout.NORTH, numberField, 0, SpringLayout.NORTH, nameField);
+		appLayout.putConstraint(SpringLayout.EAST, numberField, -6, SpringLayout.WEST, nameField);
 		attackField = new JTextField("ap");
+		appLayout.putConstraint(SpringLayout.NORTH, attackField, 39, SpringLayout.SOUTH, evolvableBox);
+		appLayout.putConstraint(SpringLayout.EAST, attackField, 0, SpringLayout.EAST, evolvableBox);
 		healthField = new JTextField("hp");
+		appLayout.putConstraint(SpringLayout.NORTH, healthField, 6, SpringLayout.SOUTH, evolvableBox);
+		appLayout.putConstraint(SpringLayout.EAST, healthField, 0, SpringLayout.EAST, evolvableBox);
 		modifierField = new JTextField("mod");
+		appLayout.putConstraint(SpringLayout.NORTH, modifierField, 9, SpringLayout.SOUTH, attackField);
+		appLayout.putConstraint(SpringLayout.EAST, modifierField, 0, SpringLayout.EAST, evolvableBox);
 		
 		iconLabel = new JLabel("", new ImageIcon(getClass().getResource("/pokemon/view/images/ash hat pikachu.png")), JLabel.CENTER);
 		
 		nameLabel = new JLabel("name");
+		appLayout.putConstraint(SpringLayout.NORTH, nameLabel, 5, SpringLayout.NORTH, nameField);
 		evolvableLabel = new JLabel("evolvable");
+		appLayout.putConstraint(SpringLayout.NORTH, evolvableLabel, 0, SpringLayout.NORTH, evolvableBox);
+		appLayout.putConstraint(SpringLayout.WEST, evolvableLabel, 10, SpringLayout.WEST, this);
 		numberLabel = new JLabel("number");
+		appLayout.putConstraint(SpringLayout.NORTH, numberLabel, 5, SpringLayout.NORTH, nameField);
+		appLayout.putConstraint(SpringLayout.WEST, numberLabel, 6, SpringLayout.EAST, nameLabel);
 		attackLabel = new JLabel("attack");
+		appLayout.putConstraint(SpringLayout.NORTH, attackLabel, 5, SpringLayout.NORTH, attackField);
+		appLayout.putConstraint(SpringLayout.WEST, attackLabel, 0, SpringLayout.WEST, nameLabel);
 		healthLabel = new JLabel("health");
+		appLayout.putConstraint(SpringLayout.NORTH, healthLabel, 5, SpringLayout.NORTH, healthField);
+		appLayout.putConstraint(SpringLayout.WEST, healthLabel, 0, SpringLayout.WEST, nameLabel);
 		modifierLabel = new JLabel("modifier");
+		appLayout.putConstraint(SpringLayout.NORTH, modifierLabel, 5, SpringLayout.NORTH, modifierField);
+		appLayout.putConstraint(SpringLayout.WEST, modifierLabel, 0, SpringLayout.WEST, nameLabel);
 		pokedexDropdown = new JComboBox();
+		appLayout.putConstraint(SpringLayout.SOUTH, pokedexDropdown, -10, SpringLayout.SOUTH, this);
+		appLayout.putConstraint(SpringLayout.EAST, pokedexDropdown, -10, SpringLayout.EAST, this);
 		clearButton = new JButton("clear");
+		appLayout.putConstraint(SpringLayout.WEST, nameLabel, 0, SpringLayout.WEST, clearButton);
+		appLayout.putConstraint(SpringLayout.NORTH, clearButton, -1, SpringLayout.NORTH, pokedexDropdown);
+		appLayout.putConstraint(SpringLayout.WEST, clearButton, 10, SpringLayout.WEST, this);
 		saveButton = new JButton("save");
+		appLayout.putConstraint(SpringLayout.SOUTH, saveButton, -6, SpringLayout.NORTH, clearButton);
+		appLayout.putConstraint(SpringLayout.EAST, saveButton, 0, SpringLayout.EAST, clearButton);
 		
 		descriptionArea = new JTextArea(5, 10);
+		appLayout.putConstraint(SpringLayout.NORTH, descriptionArea, 57, SpringLayout.NORTH, this);
+		appLayout.putConstraint(SpringLayout.WEST, descriptionArea, 104, SpringLayout.EAST, evolvableLabel);
 		typeArea = new JTextArea(4, 15);
+		appLayout.putConstraint(SpringLayout.NORTH, typeArea, 0, SpringLayout.NORTH, saveButton);
+		appLayout.putConstraint(SpringLayout.WEST, typeArea, 59, SpringLayout.EAST, clearButton);
 		
 		firstType = new JPanel();
 		secondType = new JPanel();
