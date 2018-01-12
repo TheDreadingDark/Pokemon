@@ -134,20 +134,23 @@ public class PokemonPanel extends JPanel
 			firstType.setBackground(Color.WHITE);
 		}
 		
-		if (types[1].equals("Water"))
+		if (types.length > 1)
 		{
-			secondType.setBackground(Color.BLUE);
-		}
-		//...continue as above
-		
-		if (types.length == 3)
-		{
-			if (types[2].equals("Water"))
+			if (types[1].equals("Water"))
 			{
-				thirdType.setBackground(Color.GRAY);
+				secondType.setBackground(Color.BLUE);
 			}
 			//...continue as above
+			if (types.length == 3)
+			{
+				if (types[2].equals("Water"))
+				{
+					thirdType.setBackground(Color.GRAY);
+				}
+				//...continue as above
+			}
 		}
+		
 	}
 	// Set this for each of the different type panels
 	
@@ -220,10 +223,10 @@ public class PokemonPanel extends JPanel
 		appLayout.putConstraint(SpringLayout.SOUTH, secondType, 0, SpringLayout.SOUTH, saveButton);
 		appLayout.putConstraint(SpringLayout.NORTH, firstType, 0, SpringLayout.NORTH, saveButton);
 		appLayout.putConstraint(SpringLayout.WEST, firstType, 6, SpringLayout.EAST, typeArea);
-		appLayout.putConstraint(SpringLayout.SOUTH, descriptionArea, -6, SpringLayout.NORTH, typeArea);
-		appLayout.putConstraint(SpringLayout.EAST, iconLabel, -6, SpringLayout.WEST, descriptionArea);
-		appLayout.putConstraint(SpringLayout.EAST, descriptionArea, -6, SpringLayout.WEST, modifierField);
-		appLayout.putConstraint(SpringLayout.NORTH, iconLabel, 0, SpringLayout.NORTH, evolvableBox);
+		appLayout.putConstraint(SpringLayout.EAST, iconLabel, -19, SpringLayout.WEST, descriptionArea);
+		appLayout.putConstraint(SpringLayout.SOUTH, descriptionArea, 0, SpringLayout.SOUTH, modifierField);
+		appLayout.putConstraint(SpringLayout.EAST, descriptionArea, 0, SpringLayout.EAST, numberField);
+		appLayout.putConstraint(SpringLayout.SOUTH, iconLabel, 0, SpringLayout.SOUTH, modifierField);
 	}
 	
 	private void updateImage()
