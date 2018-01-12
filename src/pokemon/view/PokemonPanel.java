@@ -228,7 +228,6 @@ public class PokemonPanel extends JPanel
 		appLayout.putConstraint(SpringLayout.WEST, secondType, 13, SpringLayout.EAST, firstType);
 		appLayout.putConstraint(SpringLayout.NORTH, firstType, 0, SpringLayout.NORTH, modifierLabel);
 		appLayout.putConstraint(SpringLayout.WEST, firstType, 0, SpringLayout.WEST, descriptionArea);
-		
 	}
 	
 	private void updateImage()
