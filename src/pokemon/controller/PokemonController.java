@@ -19,6 +19,11 @@ public class PokemonController
 //		appFrame = new PokemonFrame(this);
 	}
 	
+	public void start()
+	{
+		
+	}
+	
 	private void buildPokedex()
 	{
 		pokedex.add(new Turtwig());
