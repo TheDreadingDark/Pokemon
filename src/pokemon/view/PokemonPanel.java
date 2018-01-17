@@ -130,6 +130,10 @@ public class PokemonPanel extends JPanel
 		{
 			firstType.setBackground(Color.PINK);
 		}
+		else if (types[0].equals("Water"))
+		{
+			firstType.setBackground(Color.BLUE);
+		}
 		else
 		{
 			firstType.setBackground(Color.WHITE);
@@ -137,19 +141,20 @@ public class PokemonPanel extends JPanel
 		
 		if (types.length > 1)
 		{
-			if (types[1].equals("Water"))
+			if (types[1].equals("Psychic"))
 			{
-				secondType.setBackground(Color.BLUE);
+				secondType.setBackground(Color.PINK);
+			}
+			else if (types[1].equals("Grass"))
+			{
+				secondType.setBackground(Color.GREEN);
+			}
+			else
+			{
+				secondType.setBackground(Color.WHITE);
 			}
 			//...continue as above
-			if (types.length == 3)
-			{
-				if (types[2].equals("Water"))
-				{
-					thirdType.setBackground(Color.GRAY);
-				}
-				//...continue as above
-			}
+			
 		}
 		
 	}
