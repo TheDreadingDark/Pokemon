@@ -73,6 +73,7 @@ public class PokemonPanel extends JPanel
 		attackField = new JTextField("ap");
 		healthField = new JTextField("hp");
 		modifierField = new JTextField("mod");
+		
 		iconLabel = new JLabel("", new ImageIcon(getClass().getResource("/pokemon/view/images/logo.png")), JLabel.CENTER);
 		
 		nameLabel = new JLabel("name");
@@ -223,10 +224,10 @@ public class PokemonPanel extends JPanel
 		appLayout.putConstraint(SpringLayout.SOUTH, secondType, 0, SpringLayout.SOUTH, saveButton);
 		appLayout.putConstraint(SpringLayout.NORTH, firstType, 0, SpringLayout.NORTH, saveButton);
 		appLayout.putConstraint(SpringLayout.WEST, firstType, 6, SpringLayout.EAST, typeArea);
-		appLayout.putConstraint(SpringLayout.EAST, iconLabel, -19, SpringLayout.WEST, descriptionArea);
-		appLayout.putConstraint(SpringLayout.SOUTH, descriptionArea, 0, SpringLayout.SOUTH, modifierField);
-		appLayout.putConstraint(SpringLayout.EAST, descriptionArea, 0, SpringLayout.EAST, numberField);
-		appLayout.putConstraint(SpringLayout.SOUTH, iconLabel, 0, SpringLayout.SOUTH, modifierField);
+		appLayout.putConstraint(SpringLayout.NORTH, descriptionArea, 5, SpringLayout.NORTH, modifierField);
+		appLayout.putConstraint(SpringLayout.EAST, descriptionArea, -105, SpringLayout.WEST, modifierField);
+		appLayout.putConstraint(SpringLayout.SOUTH, iconLabel, 0, SpringLayout.SOUTH, attackField);
+		appLayout.putConstraint(SpringLayout.EAST, iconLabel, -72, SpringLayout.WEST, numberField);
 	}
 	
 	private void updateImage()
