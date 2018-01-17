@@ -63,16 +63,23 @@ public class PokemonPanel extends JPanel
 	public PokemonPanel(PokemonController appController)
 	{
 		super();
+		setBackground(new Color(220, 20, 60));
 		this.appController = appController;
 		
 		appLayout = new SpringLayout();
 				
 		evolvableBox = new JCheckBox();
 		nameField = new JTextField("name");
+		nameField.setForeground(new Color(0, 0, 0));
+		nameField.setBackground(new Color(255, 255, 255));
 		numberField = new JTextField("##");
+		numberField.setBackground(new Color(255, 255, 255));
 		attackField = new JTextField("ap");
+		attackField.setBackground(new Color(255, 255, 255));
 		healthField = new JTextField("hp");
+		healthField.setBackground(new Color(255, 255, 255));
 		modifierField = new JTextField("mod");
+		modifierField.setBackground(new Color(255, 255, 255));
 		
 		iconLabel = new JLabel("", new ImageIcon(getClass().getResource("/pokemon/view/images/logo.png")), JLabel.CENTER);
 		
@@ -83,10 +90,15 @@ public class PokemonPanel extends JPanel
 		healthLabel = new JLabel("health");
 		modifierLabel = new JLabel("modifier");
 		pokedexDropdown = new JComboBox();
+		pokedexDropdown.setBackground(new Color(255, 255, 255));
 		clearButton = new JButton("clear");
+		clearButton.setBackground(new Color(255, 255, 255));
 		saveButton = new JButton("save");
+		saveButton.setBackground(new Color(255, 255, 255));
 		descriptionArea = new JTextArea(5, 10);
+		descriptionArea.setBackground(new Color(220, 20, 60));
 		typeArea = new JTextArea(4, 15);
+		typeArea.setBackground(new Color(220, 20, 60));
 		firstType = new JPanel();
 		secondType = new JPanel();
 		thirdType = new JPanel();
