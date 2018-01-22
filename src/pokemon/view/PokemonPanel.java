@@ -102,6 +102,8 @@ public class PokemonPanel extends JPanel
 		firstType = new JPanel();
 		secondType = new JPanel();
 		thirdType = new JPanel();
+		thirdType.setForeground(new Color(0, 0, 0));
+		thirdType.setBackground(new Color(255, 255, 255));
 		fourthType = new JPanel();
 		
 		setupComboBox();
