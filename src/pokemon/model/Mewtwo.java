@@ -24,7 +24,7 @@ public class Mewtwo extends Pokemon implements Psychic
 	{
 		this.setAttackPoints(420);
 		this.setCanEvolve(false);
-		this.setEnhancementModifier(4.20);
+//		this.setEnhancementModifier(4.20);
 		this.setHealthPoints(420);
 	}
 	

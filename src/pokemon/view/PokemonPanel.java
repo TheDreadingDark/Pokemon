@@ -48,7 +48,7 @@ public class PokemonPanel extends JPanel
 		numberField.setText(appController.getPokedex().get(index).getNumber() + "");
 		attackField.setText(appController.getPokedex().get(index).getAttackPoints() + "");
 		healthField.setText(appController.getPokedex().get(index).getHealthPoints() + "");
-		modifierField.setText(appController.getPokedex().get(index).getEnhancementModifier() + "");
+//		modifierField.setText(appController.getPokedex().get(index).getEnhancementModifier() + "");
 		
 		//Update Text areas
 		descriptionArea.setText(appController.getPokedex().get(index).toString());
@@ -80,14 +80,23 @@ public class PokemonPanel extends JPanel
 		healthField.setBackground(new Color(255, 255, 255));
 		modifierField = new JTextField("mod");
 		modifierField.setBackground(new Color(255, 255, 255));
-		
 		iconLabel = new JLabel("", new ImageIcon(getClass().getResource("/pokemon/view/images/logo.png")), JLabel.CENTER);
-		
 		nameLabel = new JLabel("name");
+		appLayout.putConstraint(SpringLayout.NORTH, nameLabel, 0, SpringLayout.NORTH, nameField);
+		appLayout.putConstraint(SpringLayout.WEST, nameLabel, 10, SpringLayout.WEST, this);
 		evolvableLabel = new JLabel("evolvable");
+		appLayout.putConstraint(SpringLayout.WEST, evolvableLabel, 10, SpringLayout.WEST, this);
+		appLayout.putConstraint(SpringLayout.WEST, iconLabel, 41, SpringLayout.EAST, evolvableLabel);
+		appLayout.putConstraint(SpringLayout.NORTH, evolvableLabel, 0, SpringLayout.NORTH, evolvableBox);
 		numberLabel = new JLabel("number");
+		appLayout.putConstraint(SpringLayout.NORTH, numberLabel, 0, SpringLayout.NORTH, nameField);
+		appLayout.putConstraint(SpringLayout.WEST, numberLabel, 6, SpringLayout.EAST, nameLabel);
 		attackLabel = new JLabel("attack");
+		appLayout.putConstraint(SpringLayout.NORTH, attackLabel, 5, SpringLayout.NORTH, attackField);
 		healthLabel = new JLabel("health");
+		appLayout.putConstraint(SpringLayout.EAST, attackLabel, 0, SpringLayout.EAST, healthLabel);
+		appLayout.putConstraint(SpringLayout.NORTH, healthLabel, 5, SpringLayout.NORTH, healthField);
+		appLayout.putConstraint(SpringLayout.WEST, healthLabel, 10, SpringLayout.WEST, this);
 		modifierLabel = new JLabel("modifier");
 		pokedexDropdown = new JComboBox();
 		pokedexDropdown.setBackground(new Color(255, 255, 255));
@@ -98,9 +107,19 @@ public class PokemonPanel extends JPanel
 		descriptionArea = new JTextArea(5, 10);
 		descriptionArea.setBackground(new Color(220, 20, 60));
 		typeArea = new JTextArea(4, 15);
+		appLayout.putConstraint(SpringLayout.SOUTH, iconLabel, -21, SpringLayout.NORTH, typeArea);
+		appLayout.putConstraint(SpringLayout.SOUTH, typeArea, -10, SpringLayout.SOUTH, this);
 		typeArea.setBackground(new Color(220, 20, 60));
 		firstType = new JPanel();
+		appLayout.putConstraint(SpringLayout.SOUTH, firstType, -64, SpringLayout.SOUTH, this);
+		appLayout.putConstraint(SpringLayout.EAST, firstType, -90, SpringLayout.WEST, pokedexDropdown);
+		appLayout.putConstraint(SpringLayout.EAST, typeArea, -6, SpringLayout.WEST, firstType);
+		appLayout.putConstraint(SpringLayout.NORTH, firstType, 0, SpringLayout.NORTH, typeArea);
 		secondType = new JPanel();
+		appLayout.putConstraint(SpringLayout.NORTH, secondType, 6, SpringLayout.SOUTH, firstType);
+		appLayout.putConstraint(SpringLayout.WEST, secondType, 6, SpringLayout.EAST, typeArea);
+		appLayout.putConstraint(SpringLayout.SOUTH, secondType, -48, SpringLayout.SOUTH, this);
+		appLayout.putConstraint(SpringLayout.EAST, secondType, -90, SpringLayout.WEST, pokedexDropdown);
 		thirdType = new JPanel();
 		thirdType.setForeground(new Color(0, 0, 0));
 		thirdType.setBackground(new Color(255, 255, 255));
@@ -123,8 +142,8 @@ public class PokemonPanel extends JPanel
 	{
 		firstType.setSize(50, 50);
 		secondType.setSize(50, 50);
-		thirdType.setSize(50, 50);
-		fourthType.setSize(50, 50);
+//		thirdType.setSize(50, 50);
+//		fourthType.setSize(50, 50);
 	}
 	
 	private void updateTypePanels()
@@ -135,30 +154,142 @@ public class PokemonPanel extends JPanel
 		//Change this to match your 3 minimum Types in your pokedex
 		if(types[0].equals("Grass"))
 		{
-			firstType.setBackground(Color.GREEN);
+			firstType.setBackground (new Color(34, 139, 34));
 		}
 		else if (types[0].equals("Ground"))
 		{
-			firstType.setBackground(Color.GRAY);
+			firstType.setBackground (new Color(139, 69, 19));
 		}
 		else if (types[0].equals("Psychic"))
 		{
-			firstType.setBackground(Color.PINK);
+			firstType.setBackground (new Color(255, 20, 147));
 		}
 		else if (types[0].equals("Water"))
 		{
-			firstType.setBackground(Color.BLUE);
+			firstType.setBackground (new Color(0, 0, 255));
+		}
+		else if (types[0].equals("Bug"))
+		{
+			firstType.setBackground (new Color(0, 255, 0));
+		}
+		else if (types[0].equals("Dragon"))
+		{
+			firstType.setBackground (new Color(25, 25, 112));
+		}
+		else if (types[0].equals("Ice"))
+		{
+			firstType.setBackground (new Color(175, 238, 238));
+		}
+		else if (types[0].equals("Fighting"))
+		{
+			firstType.setBackground (new Color(139, 0, 0));
+		}
+		else if (types[0].equals("Fire"))
+		{
+			firstType.setBackground (new Color(255, 69, 0));
+		}
+		else if (types[0].equals("FLying"))
+		{
+			firstType.setBackground (new Color(147, 112, 219));
+		}
+		else if (types[0].equals("Ghost"))
+		{
+			firstType.setBackground (new Color(106, 90, 205));
+		}
+		else if (types[0].equals("Electric"))
+		{
+			firstType.setBackground (new Color(255, 255, 0));
+		}
+		else if (types[0].equals("Normal"))
+		{
+			firstType.setBackground (new Color(169, 169, 169));
+		}
+		else if (types[0].equals("Poison"))
+		{
+			firstType.setBackground (new Color(128, 0, 128));
+		}
+		else if (types[0].equals("Rock"))
+		{
+			firstType.setBackground (new Color(205, 133, 63));
+		}
+		else if (types[0].equals("Fairy"))
+		{
+			firstType.setBackground (new Color(255, 192, 203));
 		}
 		
 		if (types.length > 1)
 		{
-			if (types[1].equals("Psychic"))
+//			if (types[1].equals("Psychic"))
+//			{
+//				secondType.setBackground(new Color(255, 192, 203));
+//			}
+//			else if (types[1].equals("Grass"))
+//			{
+//				secondType.setBackground (new Color(34, 139, 34));
+//			}
+			if(types[1].equals("Grass"))
 			{
-				secondType.setBackground(Color.PINK);
+				secondType.setBackground (new Color(34, 139, 34));
 			}
-			else if (types[1].equals("Grass"))
+			else if (types[1].equals("Ground"))
 			{
-				secondType.setBackground(Color.GREEN);
+				secondType.setBackground (new Color(139, 69, 19));
+			}
+			else if (types[1].equals("Psychic"))
+			{
+				secondType.setBackground (new Color(255, 20, 147));
+			}
+			else if (types[1].equals("Water"))
+			{
+				secondType.setBackground (new Color(0, 0, 255));
+			}
+			else if (types[1].equals("Bug"))
+			{
+				secondType.setBackground (new Color(0, 255, 0));
+			}
+			else if (types[1].equals("Dragon"))
+			{
+				secondType.setBackground (new Color(25, 25, 112));
+			}
+			else if (types[1].equals("Ice"))
+			{
+				secondType.setBackground (new Color(175, 238, 238));
+			}
+			else if (types[1].equals("Fighting"))
+			{
+				secondType.setBackground (new Color(139, 0, 0));
+			}
+			else if (types[1].equals("Fire"))
+			{
+				secondType.setBackground (new Color(255, 69, 0));
+			}
+			else if (types[1].equals("FLying"))
+			{
+				secondType.setBackground (new Color(147, 112, 219));
+			}
+			else if (types[1].equals("Ghost"))
+			{
+				secondType.setBackground (new Color(106, 90, 205));
+			}
+			else if (types[1].equals("Electric"))
+			{
+				secondType.setBackground (new Color(255, 255, 0));
+			}
+			else if (types[1].equals("Normal"))
+			{
+				secondType.setBackground (new Color(169, 169, 169));
+			}
+			else if (types[1].equals("Poison"))
+			{
+				secondType.setBackground (new Color(128, 0, 128));
+			}
+			else if (types[1].equals("Rock"))
+			{
+				secondType.setBackground (new Color(205, 133, 63));
+			}
+			else if (types[1].equals("Fairy"))
+			{
+				secondType.setBackground (new Color(255, 192, 203));
 			}
 			//...continue as above
 			
@@ -175,47 +306,35 @@ public class PokemonPanel extends JPanel
 		this.add(numberField);
 		this.add(attackField);
 		this.add(healthField);
-		this.add(modifierField);
+//		this.add(modifierField);
 		this.add(iconLabel);
 		this.add(nameLabel);
 		this.add(evolvableLabel);
 		this.add(numberLabel);
 		this.add(attackLabel);
 		this.add(healthLabel);
-		this.add(modifierLabel);
+//		this.add(modifierLabel);
 		this.add(pokedexDropdown);
-		this.add(clearButton);
-		this.add(saveButton);
-		this.add(descriptionArea);
+//		this.add(clearButton);
+//		this.add(saveButton);
+//		this.add(descriptionArea);
 		this.add(typeArea);
 		this.add(firstType);
 		this.add(secondType);
-		this.add(thirdType);
-		this.add(fourthType);
+//		this.add(thirdType);
+//		this.add(fourthType);
 	}
 	
 	private void setupLayout()
 	{
-		appLayout.putConstraint(SpringLayout.WEST, nameLabel, 0, SpringLayout.WEST, clearButton);
 		appLayout.putConstraint(SpringLayout.NORTH, clearButton, -1, SpringLayout.NORTH, pokedexDropdown);
 		appLayout.putConstraint(SpringLayout.WEST, clearButton, 10, SpringLayout.WEST, this);
-		appLayout.putConstraint(SpringLayout.NORTH, typeArea, 0, SpringLayout.NORTH, saveButton);
-		appLayout.putConstraint(SpringLayout.WEST, typeArea, 59, SpringLayout.EAST, clearButton);
 		appLayout.putConstraint(SpringLayout.SOUTH, saveButton, -6, SpringLayout.NORTH, clearButton);
 		appLayout.putConstraint(SpringLayout.EAST, saveButton, 0, SpringLayout.EAST, clearButton);
 		appLayout.putConstraint(SpringLayout.SOUTH, pokedexDropdown, -10, SpringLayout.SOUTH, this);
 		appLayout.putConstraint(SpringLayout.EAST, pokedexDropdown, -10, SpringLayout.EAST, this);
 		appLayout.putConstraint(SpringLayout.NORTH, modifierLabel, 5, SpringLayout.NORTH, modifierField);
 		appLayout.putConstraint(SpringLayout.WEST, modifierLabel, 0, SpringLayout.WEST, nameLabel);
-		appLayout.putConstraint(SpringLayout.NORTH, healthLabel, 5, SpringLayout.NORTH, healthField);
-		appLayout.putConstraint(SpringLayout.WEST, healthLabel, 0, SpringLayout.WEST, nameLabel);
-		appLayout.putConstraint(SpringLayout.NORTH, attackLabel, 5, SpringLayout.NORTH, attackField);
-		appLayout.putConstraint(SpringLayout.WEST, attackLabel, 0, SpringLayout.WEST, nameLabel);
-		appLayout.putConstraint(SpringLayout.NORTH, numberLabel, 5, SpringLayout.NORTH, nameField);
-		appLayout.putConstraint(SpringLayout.WEST, numberLabel, 6, SpringLayout.EAST, nameLabel);
-		appLayout.putConstraint(SpringLayout.NORTH, evolvableLabel, 0, SpringLayout.NORTH, evolvableBox);
-		appLayout.putConstraint(SpringLayout.WEST, evolvableLabel, 10, SpringLayout.WEST, this);
-		appLayout.putConstraint(SpringLayout.NORTH, nameLabel, 5, SpringLayout.NORTH, nameField);
 		appLayout.putConstraint(SpringLayout.NORTH, modifierField, 9, SpringLayout.SOUTH, attackField);
 		appLayout.putConstraint(SpringLayout.EAST, modifierField, 0, SpringLayout.EAST, evolvableBox);
 		appLayout.putConstraint(SpringLayout.NORTH, healthField, 6, SpringLayout.SOUTH, evolvableBox);
@@ -232,14 +351,8 @@ public class PokemonPanel extends JPanel
 		appLayout.putConstraint(SpringLayout.SOUTH, fourthType, 0, SpringLayout.SOUTH, pokedexDropdown);
 		appLayout.putConstraint(SpringLayout.NORTH, thirdType, 0, SpringLayout.NORTH, pokedexDropdown);
 		appLayout.putConstraint(SpringLayout.WEST, thirdType, 6, SpringLayout.EAST, typeArea);
-		appLayout.putConstraint(SpringLayout.WEST, secondType, 6, SpringLayout.EAST, typeArea);
-		appLayout.putConstraint(SpringLayout.SOUTH, secondType, 0, SpringLayout.SOUTH, saveButton);
-		appLayout.putConstraint(SpringLayout.NORTH, firstType, 0, SpringLayout.NORTH, saveButton);
-		appLayout.putConstraint(SpringLayout.WEST, firstType, 6, SpringLayout.EAST, typeArea);
 		appLayout.putConstraint(SpringLayout.NORTH, descriptionArea, 5, SpringLayout.NORTH, modifierField);
 		appLayout.putConstraint(SpringLayout.EAST, descriptionArea, -105, SpringLayout.WEST, modifierField);
-		appLayout.putConstraint(SpringLayout.SOUTH, iconLabel, 0, SpringLayout.SOUTH, attackField);
-		appLayout.putConstraint(SpringLayout.EAST, iconLabel, -72, SpringLayout.WEST, numberField);
 	}
 	
 	private void updateImage()

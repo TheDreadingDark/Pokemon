@@ -26,13 +26,13 @@ public class PokemonController
 	
 	private void buildPokedex()
 	{
-		pokedex.add(new Turtwig());
-		pokedex.add(new Grotle());
-		pokedex.add(new Torterra());
+		pokedex.add(new Bulbasaur());
+		pokedex.add(new Ivysaur());
+		pokedex.add(new Venusaur());
 		
-		pokedex.add(new Celebi());
-		
-		pokedex.add(new Kyogre());
+		pokedex.add(new Charmander());
+		pokedex.add(new Charmeleon());
+		pokedex.add(new Charizard());
 		
 		pokedex.add(new Mewtwo());
 	}
@@ -70,7 +70,7 @@ public class PokemonController
 		
 		selected.setAttackPoints(attack);
 		selected.setCanEvolve(evolve);
-		selected.setEnhancementModifier(modify);
+//		selected.setEnhancementModifier(modify);
 		selected.setName(name);
 		selected.setHealthPoints(health);
 		

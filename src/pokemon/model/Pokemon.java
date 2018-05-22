@@ -51,12 +51,12 @@ public abstract class Pokemon
 		
 		return types;
 	}
-	public String toString()
-	{
-		String description = "Hi, I am a " + name + ", and my HP is " + healthPoints;
-	
-		return description;
-	}
+//	public String toString()
+//	{
+//		String description = "Hi, I am a " + name + ", and my HP is " + healthPoints;
+//	
+//		return description;
+//	}
 	
 	public String getPokemonInformation()
 	{
@@ -84,10 +84,10 @@ public abstract class Pokemon
 	/**
 	 * @return the enhancementModifier
 	 */
-	public double getEnhancementModifier()
-	{
-		return enhancementModifier;
-	}
+//	public double getEnhancementModifier()
+//	{
+//		return enhancementModifier;
+//	}
 
 	/**
 	 * @return the number
@@ -132,10 +132,10 @@ public abstract class Pokemon
 	/**
 	 * @param enhancementModifier the enhancementModifier to set
 	 */
-	public void setEnhancementModifier(double enhancementModifier)
-	{
-		this.enhancementModifier = enhancementModifier;
-	}
+//	public void setEnhancementModifier(double enhancementModifier)
+//	{
+//		this.enhancementModifier = enhancementModifier;
+//	}
 
 	/**
 	 * @param name the name to set
