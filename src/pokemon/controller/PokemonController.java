@@ -26,18 +26,18 @@ public class PokemonController
 	
 	private void buildPokedex()
 	{
-//		pokedex.add(new Bulbasaur());
-//		pokedex.add(new Ivysaur());
-//		pokedex.add(new Venusaur());
-//		
-//		pokedex.add(new Charmander());
-//		pokedex.add(new Charmeleon());
-//		pokedex.add(new Charizard());
-//		
-//		pokedex.add(new Squirtle());
-//		pokedex.add(new Wartortle());
-//		pokedex.add(new Blastoise());
-//		
+		pokedex.add(new Bulbasaur());
+		pokedex.add(new Ivysaur());
+		pokedex.add(new Venusaur());
+		
+		pokedex.add(new Charmander());
+		pokedex.add(new Charmeleon());
+		pokedex.add(new Charizard());
+		
+		pokedex.add(new Squirtle());
+		pokedex.add(new Wartortle());
+		pokedex.add(new Blastoise());
+		
 //		pokedex.add(new Caterpie());
 //		pokedex.add(new Metapoid());
 //		pokedex.add(new Butterfree());
@@ -179,7 +179,7 @@ public class PokemonController
 //		
 //		pokedex.add(new Himonlee());
 //		pokedex.add(new Hitmonchan());
-//		
+		
 //		pokedex.add(new Lickitung());
 //		
 //		pokedex.add(new Koffing());
@@ -250,9 +250,9 @@ public class PokemonController
 //		pokedex.add(new Dratini());
 //		pokedex.add(new Dragonair());
 //		pokedex.add(new Dragonite());
-//		
-//		pokedex.add(new Mewtwo());
-//		
+		
+		pokedex.add(new Mewtwo());
+		
 //		pokedex.add(new Mew());
 	}
 	
