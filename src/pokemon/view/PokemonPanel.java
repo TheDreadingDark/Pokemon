@@ -167,7 +167,7 @@ public class PokemonPanel extends JPanel
 		{
 			firstType.setBackground (new Color(255, 69, 0));
 		}
-		else if (types[0].equals("FLying"))
+		else if (types[0].equals("Flying"))
 		{
 			firstType.setBackground (new Color(147, 112, 219));
 		}
@@ -242,7 +242,7 @@ public class PokemonPanel extends JPanel
 			{
 				secondType.setBackground (new Color(255, 69, 0));
 			}
-			else if (types[1].equals("FLying"))
+			else if (types[1].equals("Flying"))
 			{
 				secondType.setBackground (new Color(147, 112, 219));
 			}

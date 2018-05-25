@@ -38,74 +38,74 @@ public class PokemonController
 		pokedex.add(new Wartortle());
 		pokedex.add(new Blastoise());
 		
-//		pokedex.add(new Caterpie());
-//		pokedex.add(new Metapoid());
-//		pokedex.add(new Butterfree());
-//		
-//		pokedex.add(new Weedle());
-//		pokedex.add(new Kakuna());
-//		pokedex.add(new Beedrill());
-//		
-//		pokedex.add(new Pidgey());
-//		pokedex.add(new Pidgeotto());
-//		pokedex.add(new Pidgeot());
-//		
-//		pokedex.add(new Rattata());
-//		pokedex.add(new Raticate());
-//		
-//		pokedex.add(new Spearow());
-//		pokedex.add(new Fearow());
-//		
-//		pokedex.add(new Ekans());
-//		pokedex.add(new Arbok());
-//		
-//		pokedex.add(new Pikachu());
-//		pokedex.add(new Raichu());
-//		
-//		pokedex.add(new Sandshrew());
-//		pokedex.add(new Sandslash());
-//		
-//		pokedex.add(new Nidoran♀());
-//		pokedex.add(new Nidorina());
-//		pokedex.add(new Nidoqueen());
-//		
-//		pokedex.add(new Nidoran♂());
-//		pokedex.add(new Nidorino());
-//		pokedex.add(new Nidoking());
-//		
-//		pokedex.add(new Clefairy());
-//		pokedex.add(new Clefable());
-//		
-//		pokedex.add(new Vulpix());
-//		pokedex.add(new Ninetales());
-//		
-//		pokedex.add(new Jigglypuff());
-//		pokedex.add(new Wigglytuff());
-//		
-//		pokedex.add(new Zubat());
-//		pokedex.add(new Golbat());
-//		
-//		pokedex.add(new Oddish());
-//		pokedex.add(new Gloom());
-//		pokedex.add(new Vileplume());
-//		
-//		pokedex.add(new Paras());
-//		pokedex.add(new Parasect());
-//		
-//		pokedex.add(new Venonat());
-//		pokedex.add(new Venomoth());
-//		
-//		pokedex.add(new Diglett());
-//		pokedex.add(new Dugtrio());
-//		
-//		pokedex.add(new Meowth());
-//		pokedex.add(new Persian());
-//		
-//		pokedex.add(new Psyduck());
-//		pokedex.add(new Golduck());
-//		
-//		pokedex.add(new Mankey());
-//		pokedex.add(new Primeape());
+		pokedex.add(new Caterpie());
+		pokedex.add(new Metapod());
+		pokedex.add(new Butterfree());
+		
+		pokedex.add(new Weedle());
+		pokedex.add(new Kakuna());
+		pokedex.add(new Beedrill());
+		
+		pokedex.add(new Pidgey());
+		pokedex.add(new Pidgeotto());
+		pokedex.add(new Pidgeot());
+		
+		pokedex.add(new Rattata());
+		pokedex.add(new Raticate());
+		
+		pokedex.add(new Spearow());
+		pokedex.add(new Fearow());
+		
+		pokedex.add(new Ekans());
+		pokedex.add(new Arbok());
+		
+		pokedex.add(new Pikachu());
+		pokedex.add(new Raichu());
+		
+		pokedex.add(new Sandshrew());
+		pokedex.add(new Sandslash());
+		
+		pokedex.add(new NidoranFemale());
+		pokedex.add(new Nidorina());
+		pokedex.add(new Nidoqueen());
+		
+		pokedex.add(new NidoranMale());
+		pokedex.add(new Nidorino());
+		pokedex.add(new Nidoking());
+		
+		pokedex.add(new Clefairy());
+		pokedex.add(new Clefable());
+		
+		pokedex.add(new Vulpix());
+		pokedex.add(new Ninetails());
+		
+		pokedex.add(new Jigglypuff());
+		pokedex.add(new Wigglytuff());
+		
+		pokedex.add(new Zubat());
+		pokedex.add(new Golbat());
+		
+		pokedex.add(new Oddish());
+		pokedex.add(new Gloom());
+		pokedex.add(new Vileplume());
+		
+		pokedex.add(new Paras());
+		pokedex.add(new Parasect());
+		
+		pokedex.add(new Venonat());
+		pokedex.add(new Venomoth());
+		
+		pokedex.add(new Diglett());
+		pokedex.add(new Dugtrio());
+		
+		pokedex.add(new Meowth());
+		pokedex.add(new Persian());
+		
+		pokedex.add(new Psyduck());
+		pokedex.add(new Golduck());
+		
+		pokedex.add(new Mankey());
+		pokedex.add(new Primeape());
 //		
 //		pokedex.add(new Growlithe());
 //		pokedex.add(new Arcanine());
