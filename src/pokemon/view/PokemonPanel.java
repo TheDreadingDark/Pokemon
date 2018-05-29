@@ -181,7 +181,7 @@ public class PokemonPanel extends JPanel
 		}
 		else if (types[0].equals("Normal"))
 		{
-			firstType.setBackground (new Color(169, 169, 169));
+			firstType.setBackground (new Color(210,180,140));
 		}
 		else if (types[0].equals("Poison"))
 		{
@@ -194,6 +194,10 @@ public class PokemonPanel extends JPanel
 		else if (types[0].equals("Fairy"))
 		{
 			firstType.setBackground (new Color(255, 192, 203));
+		}
+		else if (types[0].equals("Steel"))
+		{
+			firstType.setBackground (new Color(192,192,192));
 		}
 		
 		if (types.length > 1)
@@ -256,7 +260,7 @@ public class PokemonPanel extends JPanel
 			}
 			else if (types[1].equals("Normal"))
 			{
-				secondType.setBackground (new Color(169, 169, 169));
+				secondType.setBackground (new Color(210,180,140));
 			}
 			else if (types[1].equals("Poison"))
 			{
@@ -269,6 +273,10 @@ public class PokemonPanel extends JPanel
 			else if (types[1].equals("Fairy"))
 			{
 				secondType.setBackground (new Color(255, 192, 203));
+			}
+			else if (types[0].equals("Steel"))
+			{
+				firstType.setBackground (new Color(192,192,192));
 			}
 			//...continue as above
 			

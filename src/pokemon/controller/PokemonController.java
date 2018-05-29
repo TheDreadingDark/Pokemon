@@ -106,110 +106,110 @@ public class PokemonController
 		
 		pokedex.add(new Mankey());
 		pokedex.add(new Primeape());
-//		
-//		pokedex.add(new Growlithe());
-//		pokedex.add(new Arcanine());
-//		
-//		pokedex.add(new Poliwag());
-//		pokedex.add(new Poliwhirl());
-//		pokedex.add(new Poliwrath());
-//		
-//		pokedex.add(new Abra());
-//		pokedex.add(new Kadabra());
-//		pokedex.add(new Alakazam());
-//		
-//		pokedex.add(new Machop());
-//		pokedex.add(new Machoke());
-//		pokedex.add(new Machamp());
-//		
-//		pokedex.add(new Bellsprout());
-//		pokedex.add(new Weepinbell());
-//		pokedex.add(new Victreebel());
-//		
-//		pokedex.add(new Tentacool());
-//		pokedex.add(new Tentacruel());
-//		
-//		pokedex.add(new Geodude());
-//		pokedex.add(new Graveler());
-//		pokedex.add(new Golem());
-//		
-//		pokedex.add(new Ponyta());
-//		pokedex.add(new Rapidash());
-//		
-//		pokedex.add(new Slowpoke());
-//		pokedex.add(new Slowbro());
-//		
-//		pokedex.add(new Magnemite());
-//		pokedex.add(new Magneton());
-//		
-//		pokedex.add(new Farfetchd());
-//		
-//		pokedex.add(new Doduo());
-//		pokedex.add(new Dodrio());
-//		
-//		pokedex.add(new Seel());
-//		pokedex.add(new Dewgong());
-//		
-//		pokedex.add(new Grimer());
-//		pokedex.add(new Muk());
-//		
-//		pokedex.add(new Shellder());
-//		pokedex.add(new Cloyster());
-//		
-//		pokedex.add(new Gastly());
-//		pokedex.add(new Haunter());
-//		pokedex.add(new Gengar());
-//		
-//		pokedex.add(new Onix());
-//		
-//		pokedex.add(new Drowzee());
-//		pokedex.add(new Hypno());
-//		
-//		pokedex.add(new Krabby());
-//		pokedex.add(new Kingler());
-//		
-//		pokedex.add(new Voltorb());
-//		pokedex.add(new Electrode());
-//		
-//		pokedex.add(new Exeggcute());
-//		pokedex.add(new Exeggutor());
-//		
-//		pokedex.add(new Cubone());
-//		pokedex.add(new Marowak());
-//		
-//		pokedex.add(new Himonlee());
-//		pokedex.add(new Hitmonchan());
 		
-//		pokedex.add(new Lickitung());
-//		
-//		pokedex.add(new Koffing());
-//		pokedex.add(new Weezing());
-//		
-//		pokedex.add(new Rhyhorn());
-//		pokedex.add(new Rhydon());
-//		
-//		pokedex.add(new Chansey());
-//		
-//		pokedex.add(new Tangela());
-//		
-//		pokedex.add(new Kangaskhan());
-//		
-//		pokedex.add(new Horsea());
-//		pokedex.add(new Seadra());
-//		
-//		pokedex.add(new Goldeen());
-//		pokedex.add(new Seaking());
-//		
-//		pokedex.add(new Staryu());
-//		pokedex.add(new Starmie());
-//		
-//		pokedex.add(new Mr. Mime());
-//		
-//		pokedex.add(new Scyther());
-//		
-//		pokedex.add(new Jynx());
-//		
-//		pokedex.add(new Electabuzz());
+		pokedex.add(new Growlithe());
+		pokedex.add(new Arcanine());
+		
+		pokedex.add(new Poliwag());
+		pokedex.add(new Poliwhirl());
+		pokedex.add(new Poliwrath());
+		
+		pokedex.add(new Abra());
+		pokedex.add(new Kadabra());
+		pokedex.add(new Alakazam());
+		
+		pokedex.add(new Machop());
+		pokedex.add(new Machoke());
+		pokedex.add(new Machamp());
+		
+		pokedex.add(new Bellsprout());
+		pokedex.add(new Weepinbell());
+		pokedex.add(new Victreebel());
+		
+		pokedex.add(new Tentacool());
+		pokedex.add(new Tentacruel());
+		
+		pokedex.add(new Geodude());
+		pokedex.add(new Graveler());
+		pokedex.add(new Golem());
+		
+		pokedex.add(new Ponyta());
+		pokedex.add(new Rapidash());
+		
+		pokedex.add(new Slowpoke());
+		pokedex.add(new Slowbro());
+		
+		pokedex.add(new Magnemite());
+		pokedex.add(new Magneton());
+		
+		pokedex.add(new Farfetchd());
+		
+		pokedex.add(new Doduo());
+		pokedex.add(new Dodrio());
+		
+		pokedex.add(new Seel());
+		pokedex.add(new Dewgong());
+		
+		pokedex.add(new Grimer());
+		pokedex.add(new Muk());
+		
+		pokedex.add(new Shellder());
+		pokedex.add(new Cloyster());
+		
+		pokedex.add(new Gastly());
+		pokedex.add(new Haunter());
+		pokedex.add(new Gengar());
+		
+		pokedex.add(new Onix());
+		
+		pokedex.add(new Drowzee());
+		pokedex.add(new Hypno());
+		
+		pokedex.add(new Krabby());
+		pokedex.add(new Kingler());
+		
+		pokedex.add(new Voltorb());
+		pokedex.add(new Electrode());
+		
+		pokedex.add(new Exeggcute());
+		pokedex.add(new Exeggutor());
+		
+		pokedex.add(new Cubone());
+		pokedex.add(new Marowak());
+		
+		pokedex.add(new Hitmonlee());
+		pokedex.add(new Hitmonchan());
+		
+		pokedex.add(new Lickitung());
+		
+		pokedex.add(new Koffing());
+		pokedex.add(new Weezing());
+		
+		pokedex.add(new Rhyhorn());
+		pokedex.add(new Rhydon());
+		
+		pokedex.add(new Chansey());
+		
+		pokedex.add(new Tangela());
+		
+		pokedex.add(new Kangaskhan());
+		
+		pokedex.add(new Horsea());
+		pokedex.add(new Seadra());
+		
+		pokedex.add(new Goldeen());
+		pokedex.add(new Seaking());
+		
+		pokedex.add(new Staryu());
+		pokedex.add(new Starmie());
+		
+		pokedex.add(new MrMime());
+		
+		pokedex.add(new Scyther());
+		
+		pokedex.add(new Jynx());
+		
+		pokedex.add(new Electabuzz());
 //		
 //		pokedex.add(new Magmar());
 //		
