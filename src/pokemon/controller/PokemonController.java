@@ -210,50 +210,50 @@ public class PokemonController
 		pokedex.add(new Jynx());
 		
 		pokedex.add(new Electabuzz());
-//		
-//		pokedex.add(new Magmar());
-//		
-//		pokedex.add(new Pinsir());
-//		
-//		pokedex.add(new Tauros());
-//		
-//		pokedex.add(new Magikarp());
-//		pokedex.add(new Gyrados());
-//		
-//		pokedex.add(new Lapras());
-//		
-//		pokedex.add(new Ditto());
-//		
-//		pokedex.add(new Eevee());
-//		pokedex.add(new Vaporeon());
-//		pokedex.add(new Jolteon());
-//		pokedex.add(new Flareon());
-//		
-//		pokedex.add(new Porygon());
-//		
-//		pokedex.add(new Omanyte());
-//		pokedex.add(new Omastar());
-//		
-//		pokedex.add(new Kabuto());
-//		pokedex.add(new Kabutops());
-//		
-//		pokedex.add(new Aerodactyl());
-//		
-//		pokedex.add(new Snorlax());
-//		
-//		pokedex.add(new Articuno());
-//
-//		pokedex.add(new Zapdos());
-//		
-//		pokedex.add(new Moltres());
-//		
-//		pokedex.add(new Dratini());
-//		pokedex.add(new Dragonair());
-//		pokedex.add(new Dragonite());
+		
+		pokedex.add(new Magmar());
+		
+		pokedex.add(new Pinsir());
+		
+		pokedex.add(new Tauros());
+		
+		pokedex.add(new Magikarp());
+		pokedex.add(new Gyarados());
+		
+		pokedex.add(new Lapras());
+		
+		pokedex.add(new Ditto());
+		
+		pokedex.add(new Eevee());
+		pokedex.add(new Vaporeon());
+		pokedex.add(new Jolteon());
+		pokedex.add(new Flareon());
+		
+		pokedex.add(new Porygon());
+		
+		pokedex.add(new Omanyte());
+		pokedex.add(new Omastar());
+		
+		pokedex.add(new Kabuto());
+		pokedex.add(new Kabutops());
+		
+		pokedex.add(new Aerodactyl());
+		
+		pokedex.add(new Snorlax());
+		
+		pokedex.add(new Articuno());
+
+		pokedex.add(new Zapdos());
+		
+		pokedex.add(new Moltres());
+		
+		pokedex.add(new Dratini());
+		pokedex.add(new Dragonair());
+		pokedex.add(new Dragonite());
 		
 		pokedex.add(new Mewtwo());
 		
-//		pokedex.add(new Mew());
+		pokedex.add(new Mew());
 	}
 	
 	public List<Pokemon> getPokedex()
