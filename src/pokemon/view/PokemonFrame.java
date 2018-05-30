@@ -20,7 +20,7 @@ public class PokemonFrame extends JFrame
 	{
 		this.setContentPane(appPanel);
 		this.setSize(500, 500);
-		this.setTitle("Pokemon 2018");
+		this.setTitle("Gen 1 Pokedex");
 		this.setResizable(false);
 		this.setVisible(true);
 	}
