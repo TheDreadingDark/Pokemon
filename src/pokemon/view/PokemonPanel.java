@@ -274,9 +274,9 @@ public class PokemonPanel extends JPanel
 			{
 				secondType.setBackground (new Color(255, 192, 203));
 			}
-			else if (types[0].equals("Steel"))
+			else if (types[1].equals("Steel"))
 			{
-				firstType.setBackground (new Color(192,192,192));
+				secondType.setBackground (new Color(192,192,192));
 			}
 			//...continue as above
 			
