@@ -30,14 +30,14 @@ public class PokemonPanel extends JPanel
 	private JTextArea descriptionArea;
 	private JTextArea typeArea;
 	
-	private JButton saveButton;
-	private JButton clearButton;
+//	private JButton saveButton;
+//	private JButton clearButton;
 	private JComboBox pokedexDropdown;
 	
 	private JPanel firstType;
 	private JPanel secondType;
-	private JPanel thirdType;
-	private JPanel fourthType;
+//	private JPanel thirdType;
+//	private JPanel fourthType;
 	
 	
 	private void updatePokedexInfo(int index)

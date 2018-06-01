@@ -251,9 +251,9 @@ public class PokemonController
 		pokedex.add(new Dragonair());
 		pokedex.add(new Dragonite());
 		
-		pokedex.add(new Mewtwo());
-		
 		pokedex.add(new Mew());
+		
+		pokedex.add(new Mewtwo());
 	}
 	
 	public List<Pokemon> getPokedex()
