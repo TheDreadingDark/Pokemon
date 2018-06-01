@@ -89,20 +89,20 @@ public class PokemonPanel extends JPanel
 		modifierLabel = new JLabel("modifier");
 		pokedexDropdown = new JComboBox();
 		pokedexDropdown.setBackground(new Color(255, 255, 255));
-		clearButton = new JButton("clear");
-		clearButton.setBackground(new Color(255, 255, 255));
-		saveButton = new JButton("save");
-		saveButton.setBackground(new Color(255, 255, 255));
+//		clearButton = new JButton("clear");
+//		clearButton.setBackground(new Color(255, 255, 255));
+//		saveButton = new JButton("save");
+//		saveButton.setBackground(new Color(255, 255, 255));
 		descriptionArea = new JTextArea(5, 10);
 		descriptionArea.setBackground(new Color(220, 20, 60));
 		typeArea = new JTextArea(4, 15);
 		typeArea.setBackground(new Color(220, 20, 60));
 		firstType = new JPanel();
 		secondType = new JPanel();
-		thirdType = new JPanel();
-		thirdType.setForeground(new Color(0, 0, 0));
-		thirdType.setBackground(new Color(255, 255, 255));
-		fourthType = new JPanel();
+//		thirdType = new JPanel();
+//		thirdType.setForeground(new Color(0, 0, 0));
+//		thirdType.setBackground(new Color(255, 255, 255));
+//		fourthType = new JPanel();
 		
 		setupComboBox();
 		setupTypePanels();
@@ -314,10 +314,10 @@ public class PokemonPanel extends JPanel
 	
 	private void setupLayout()
 	{
-		appLayout.putConstraint(SpringLayout.NORTH, clearButton, -1, SpringLayout.NORTH, pokedexDropdown);
-		appLayout.putConstraint(SpringLayout.WEST, clearButton, 10, SpringLayout.WEST, this);
-		appLayout.putConstraint(SpringLayout.SOUTH, saveButton, -6, SpringLayout.NORTH, clearButton);
-		appLayout.putConstraint(SpringLayout.EAST, saveButton, 0, SpringLayout.EAST, clearButton);
+//		appLayout.putConstraint(SpringLayout.NORTH, clearButton, -1, SpringLayout.NORTH, pokedexDropdown);
+//		appLayout.putConstraint(SpringLayout.WEST, clearButton, 10, SpringLayout.WEST, this);
+//		appLayout.putConstraint(SpringLayout.SOUTH, saveButton, -6, SpringLayout.NORTH, clearButton);
+//		appLayout.putConstraint(SpringLayout.EAST, saveButton, 0, SpringLayout.EAST, clearButton);
 		appLayout.putConstraint(SpringLayout.SOUTH, pokedexDropdown, -10, SpringLayout.SOUTH, this);
 		appLayout.putConstraint(SpringLayout.EAST, pokedexDropdown, -10, SpringLayout.EAST, this);
 		appLayout.putConstraint(SpringLayout.NORTH, modifierLabel, 5, SpringLayout.NORTH, modifierField);
@@ -334,10 +334,10 @@ public class PokemonPanel extends JPanel
 		appLayout.putConstraint(SpringLayout.EAST, evolvableBox, 0, SpringLayout.EAST, nameField);
 		appLayout.putConstraint(SpringLayout.NORTH, nameField, 10, SpringLayout.NORTH, this);
 		appLayout.putConstraint(SpringLayout.EAST, nameField, -10, SpringLayout.EAST, this);
-		appLayout.putConstraint(SpringLayout.WEST, fourthType, 6, SpringLayout.EAST, typeArea);
-		appLayout.putConstraint(SpringLayout.SOUTH, fourthType, 0, SpringLayout.SOUTH, pokedexDropdown);
-		appLayout.putConstraint(SpringLayout.NORTH, thirdType, 0, SpringLayout.NORTH, pokedexDropdown);
-		appLayout.putConstraint(SpringLayout.WEST, thirdType, 6, SpringLayout.EAST, typeArea);
+//		appLayout.putConstraint(SpringLayout.WEST, fourthType, 6, SpringLayout.EAST, typeArea);
+//		appLayout.putConstraint(SpringLayout.SOUTH, fourthType, 0, SpringLayout.SOUTH, pokedexDropdown);
+//		appLayout.putConstraint(SpringLayout.NORTH, thirdType, 0, SpringLayout.NORTH, pokedexDropdown);
+//		appLayout.putConstraint(SpringLayout.WEST, thirdType, 6, SpringLayout.EAST, typeArea);
 		appLayout.putConstraint(SpringLayout.NORTH, descriptionArea, 5, SpringLayout.NORTH, modifierField);
 		appLayout.putConstraint(SpringLayout.EAST, descriptionArea, -105, SpringLayout.WEST, modifierField);
 		appLayout.putConstraint(SpringLayout.NORTH, nameLabel, 0, SpringLayout.NORTH, nameField);
@@ -397,25 +397,25 @@ public class PokemonPanel extends JPanel
 			}
 		});
 		
-		saveButton.addActionListener(new ActionListener()
-		{
-			public void actionPerformed(ActionEvent click)
-			{
-				if(appController.isValidInteger(attackField.getText()) && appController.isValidInteger(healthField.getText())
-						&& appController.isValidDouble(modifierField.getText()))
-				{
-					int selected = pokedexDropdown.getSelectedIndex();
-					int health = Integer.parseInt(healthField.getText());
-					int attack = Integer.parseInt(attackField.getText());
-					double modifier = Double.parseDouble(modifierField.getText());
-					String name = nameField.getText();
-					boolean evolvable = evolvableBox.isSelected();
-					
-					//Send to the Controller to modify the Pokemon
-					appController.updateSelected(selected, health, attack, evolvable, modifier, name);
-				}
-			}
-		});
+//		saveButton.addActionListener(new ActionListener()
+//		{
+//			public void actionPerformed(ActionEvent click)
+//			{
+//				if(appController.isValidInteger(attackField.getText()) && appController.isValidInteger(healthField.getText())
+//						&& appController.isValidDouble(modifierField.getText()))
+//				{
+//					int selected = pokedexDropdown.getSelectedIndex();
+//					int health = Integer.parseInt(healthField.getText());
+//					int attack = Integer.parseInt(attackField.getText());
+//					double modifier = Double.parseDouble(modifierField.getText());
+//					String name = nameField.getText();
+//					boolean evolvable = evolvableBox.isSelected();
+//					
+//					//Send to the Controller to modify the Pokemon
+//					appController.updateSelected(selected, health, attack, evolvable, modifier, name);
+//				}
+//			}
+//		});
 		
 	}
 	
